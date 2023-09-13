@@ -5,3 +5,4 @@ amazonURL = "https://www.amazon.co.jp/Python%E3%81%A7%E3%81%AF%E3%81%98%E3%82%81
 
 def amazonTrackingPrice():
     amazonPage = requests.get(amazonURL)
+    soup = BeautifulSoup(amazonPage.content, "html.parser")
